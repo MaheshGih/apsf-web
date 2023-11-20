@@ -1,0 +1,192 @@
+<div class="page-content" ng-controller="ProfileCtrl as profile">
+	<div class="page-header position-relative">
+		<h1>
+			User Profile Page
+			<small>
+				<i class="icon-double-angle-right"></i>
+				<!--3 styles with inline editable feature-->
+			</small>
+		</h1>
+	</div><!--/.page-header-->
+	
+	<div class="row-fluid">
+		<div class="span12">
+			<!--PAGE CONTENT BEGINS-->
+	
+			<div>
+				<div id="user-profile-1" class="user-profile row-fluid">
+					<div class="span3 center">
+						<div>
+							<span class="profile-picture">
+								<img id="avatar" class="editable" alt="Alex's Avatar" src="resources/avatars/profile-pic.jpg" />
+							</span>
+	
+							<div class="space-4"></div>
+	
+							<div class="width-80 label label-info label-large arrowed-in arrowed-in-right">
+								<div class="inline position-relative">
+									<a href="#" class="user-title-label dropdown-toggle" data-toggle="dropdown">
+										<i class="icon-circle light-green middle"></i>
+										&nbsp;
+										<span class="white middle bigger-120">{{profile.model.name}}</span>
+									</a>
+	
+									
+								</div>
+							</div>
+						</div>
+	
+						<div class="space-6"></div>
+	
+						<div class="profile-contact-info">
+							<div class="profile-contact-links align-left">
+								
+								<i class="icon-plus-sign bigger-120 green"></i>Reg No: {{profile.model.regid}}
+									
+								<a class="btn btn-link" data-target="#">
+									
+									Status:{{profile.model.status}}
+								</a>
+				
+								<a class="btn btn-link" data-target="#">
+									<i class="icon-phone bigger-125 blue"></i>
+									{{profile.model.phno}}
+								</a>
+							</div>
+	
+							<div class="space-6"></div>
+	
+							<div class="profile-social-links center">
+								<a class="btn btn-link" href="#">
+									<i class="icon-link bigger-125 blue"></i>
+									Referance:{{profile.model.referedRegid}}
+								</a>
+							</div>
+						</div>
+	
+						<div class="hr hr12 dotted"></div>
+	
+						<div class="clearfix">
+							<div class="grid2">
+								<span class="bigger-175 blue">0</span>
+	
+								<br />
+								Referal Members
+							</div>
+	
+							<div class="grid2">
+								<span class="bigger-175 blue">0</span>
+	
+								<br />
+								Verified
+							</div>
+						</div>
+	
+						<div class="hr hr16 dotted"></div>
+					</div>
+	
+					<div class="span9">
+						<div class="center">
+							
+						</div>
+	
+						<div class="space-12"></div>
+	
+						<div class="profile-user-info profile-user-info-striped">
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Name </div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="username">{{profile.model.name+profile.model.surname}}</span>
+								</div>
+							</div>
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Mobile Number </div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="phno">{{profile.model.phno}}</span>
+								</div>
+							</div>
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Date of Birth </div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="age">{{profile.model.dob}}</span>
+								</div>
+							</div>
+	
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Blood Group </div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="bloodGroup">{{profile.model.bloodGroup}}</span>
+								</div>
+							</div>
+	
+							<div class="profile-info-row">
+								<div class="profile-info-name">Gender</div>
+								<div class="profile-info-value">
+									<span class="editable" id="gender">{{profile.model.gender!=null?(profile.model.gender=='M'?'Male':'FEMALE'):''}}</span>
+								</div>
+							</div>
+	
+							
+	
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Select Caste </div>
+								<div class="profile-info-value">
+									<span class="editable" id="gender">{{profile.model.subcaste.name}}</span>
+								</div>
+							</div>
+	
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Qualification </div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="qualification">{{profile.model.qualification.name}}</span>
+								</div>
+							</div>
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Profession </div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="qualification">{{profile.model.profeession.name}}</span>
+								</div>
+							</div>
+							<div class="profile-info-row">
+								<div class="profile-info-name">Department</div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="department">{{profile.model.department.name}}</span>
+								</div>
+							</div>
+	
+							
+							<div class="profile-info-row">
+								<div class="profile-info-name"> Address </div>
+	
+								<div class="profile-info-value">
+									<span class="editable" id="">
+										{{
+											(profile.model.address1||'')  
+											+ ',' + (profile.model.village.name||'') 
+											+ ' ' + (profile.model.mandal.name||'')
+											+ ' ' + (profile.model.constituency.name||'')
+											+ ' ' + (profile.model.district.name||'')
+											+ ' ' + (profile.model.state.name||'')
+											
+										}}
+									</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div><!--/.row-fluid-->
+</div><!--/.page-content-->
+
+	

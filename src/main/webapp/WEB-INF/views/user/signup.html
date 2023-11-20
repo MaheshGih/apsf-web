@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Signup Page - APSF Admin</title>
+
+<meta name="description" content="User login page" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--basic styles-->
+
+<link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="resources/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="resources/css/font-awesome.min.css" />
+
+<!--[if IE 7]>
+		  <link rel="stylesheet" href="resources/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+<!--page specific plugin styles-->
+
+<!--fonts-->
+
+<link rel="stylesheet"
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+<!--ace styles-->
+
+<link rel="stylesheet" href="resources/css/ace.min.css" />
+<link rel="stylesheet" href="resources/css/ace-responsive.min.css" />
+<link rel="stylesheet" href="resources/css/ace-skins.min.css" />
+
+<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="resources/css/ace-ie.min.css" />
+		<![endif]-->
+
+<!--inline styles related to this page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body class="login-layout">
+	<div class="main-container container-fluid" ng-app="apsf" ng-controller="RegistrationCtrl">
+		<div class="main-content" >
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="login-container">
+						<div class="row-fluid">
+							<div class="center">
+								<h1>
+									<i class="icon-leaf green"></i> <span class="red">APSF</span> <span
+										class="white">Application</span>
+								</h1>
+								<h4 class="blue">&copy; V2 Software Solutions</h4>
+							</div>
+						</div>
+
+						<div class="space-6"></div>
+
+						<div class="row-fluid">
+							<div class="position-relative">
+								<div id="login-box"
+									class="login-box visible widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header green lighter bigger">
+												<i class="icon-group blue"></i> Create New User
+											</h4>
+
+											<div class="space-8"></div>
+												<div>
+								<div id="user-profile-1" class="user-profile row-fluid">
+									
+
+									<div class="span12">
+										
+
+										
+
+										<div class="profile-user-info profile-user-info-striped">
+
+
+											<div class="profile-info-row">
+												<div class="profile-info-name">Reference code </div>
+
+												<div class="profile-info-value">
+													<span class="editable" id="username">Enter Your Reference code</span>
+												</div>
+											</div>
+
+
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Name </div>
+
+												<div class="profile-info-value">
+													<span class="editable" id="username">Veera</span>
+												</div>
+											</div>
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Surname </div>
+
+												<div class="profile-info-value">
+													<span class="editable" id="username">Batthula</span>
+												</div>
+											</div>
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Date of Birth </div>
+
+												<div class="profile-info-value">
+													<span class="editable" id="age">14/May/1990</span>
+												</div>
+											</div>
+
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Blood Group </div>
+
+												<div class="profile-info-value">
+													<span class="" id="">
+														<label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select Blood Group</option>
+															<option value="website" >B+ve</option>
+															<option value="membership" >O-ve</option>
+															<option value="telepathy" >AB+ve</option>
+															
+															</select>
+														</label>
+													</span>
+												</div>
+											</div>
+
+											<div class="profile-info-row">
+												<div class="profile-info-name">Gender</div>
+
+
+												<div class="profile-info-value">
+													
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select Gender</option>
+															<option value="website" >Male</option>
+															<option value="membership" >Female</option>
+															<option value="telepathy" >Others</option>
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+
+											
+
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Select Caste </div>
+
+												<div class="profile-info-value">
+													
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select Your Caste</option>
+															<option value="website" >BC</option>
+															<option value="membership" >ST</option>
+															<option value="telepathy" >Minorites</option>
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Mobile Number </div>
+
+												<div class="profile-info-value">
+													<span class="editable" id="login">+91-9494678351</span>
+												</div>
+											</div>
+
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Qualification </div>
+
+												<div class="profile-info-value">
+													 
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select Your Qualification</option>
+															<option value="website" >Below SSC</option>
+															<option value="membership" >InterMediate</option>
+															<option value="telepathy" >Graduate</option>
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Profession </div>
+
+												<div class="profile-info-value">
+													
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select Your Profession</option>
+															<option value="website" >Private</option>
+															<option value="membership" >Government</option>
+															<option value="telepathy" >Professionals</option>
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+											<div class="profile-info-row">
+												<div class="profile-info-name">Department</div>
+
+												<div class="profile-info-value">
+													
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select Department</option>
+															<option value="website" >Software</option>
+															<option value="membership" >Police</option>
+															<option value="telepathy" >Business</option>
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+
+											
+											<div class="profile-info-row">
+												<div class="profile-info-name"> State </div>
+
+												<div class="profile-info-value">
+													
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select State</option>
+															<option value="website" >Andhra Pradesh</option>
+															<option value="membership" >Telangana</option>
+															<option value="telepathy" >Karnataka</option>
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+											<div class="profile-info-row">
+												<div class="profile-info-name">Constituency&amp;District </div>
+
+												<div class="profile-info-value">
+													
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select Constituency&amp;District</option>
+															<option value="website" >Repalli-Guntur</option>
+															<option value="membership" >Narasaraopet-Guntur</option>
+															
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+
+											<div class="profile-info-row">
+												<div class="profile-info-name">Mandal &amp; Village </div>
+
+												<div class="profile-info-value">
+													
+													<span class="" id=""><label> 
+															<select id="pickup_place" name="pickup_place">
+															<option value="" selected="selected">Select VIllage-Mandal</option>
+															<option value="website" >Dullipudi-Nagaram</option>
+															<option value="membership" >Sankuratripadu-Nadendla</option>
+															
+															
+															</select>
+														</label>
+													</span>
+													
+												</div>
+											</div>
+
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Aadhaar/Voter/Pan ID </div>
+
+												<div class="profile-info-value">
+													<span class="editable" id="login">12345846685555</span>
+												</div>
+											</div>
+											<div class="profile-info-row">
+												<div class="profile-info-name">Profile Pic</div>
+
+												<div class="profile-info-value">
+													<span class="editable" id="login"></span> <span class="block input-icon input-icon-right">
+																<input type="file" class="span12" placeholder="Select Photo" />
+																<i class="icon-picture"></i>
+															</span>
+												</div>
+											</div>
+
+											<div class="profile-info-row">
+												<div class="profile-info-name"> Other Info </div>
+
+												<div class="profile-info-value">
+													<textarea rows="5" cols="100">
+														Enter user other information
+													</textarea>
+												</div>
+											</div>
+											
+										
+
+										<div class="space-20"></div>
+
+
+
+
+
+										<div class="clearfix">
+															
+
+															<button  class="width-20 pull-right btn btn-small btn-success">
+																SAVE
+																<i class="icon-arrow-right icon-on-right"></i>
+															</button>
+														</div>
+
+										<div class="widget-box transparent">
+											
+
+											
+												</div>
+											</div>
+										</div>
+
+										
+
+										
+
+										
+									</div>
+								</div>
+
+											<!-- <form>
+												<fieldset>
+													<label> <select id="pickup_place"
+														name="pickup_place">
+															<option value="" selected="selected">Select User
+																Role</option>
+															<option value="website">Telecaller</option>
+															<option value="membership">SUperviser</option>
+															<option value="telepathy">Manager</option>
+															<option value="telepathy">Admin</option>
+													</select>
+													</label> <label> <span
+														class="block input-icon input-icon-right"> <input
+															type="text" class="span12" placeholder="Full Name" /> <i
+															class="icon-pencil"></i>
+													</span>
+													</label> <label> <span
+														class="block input-icon input-icon-right"> <input
+															type="email" class="span12" placeholder="Email" /> <i
+															class="icon-envelope"></i>
+													</span>
+													</label> <label> <span
+														class="block input-icon input-icon-right"> <input
+															type="phone" class="span12" placeholder="Phone Number" />
+															<i class="icon-phone"></i>
+													</span>
+													</label> <label> <span
+														class="block input-icon input-icon-right"> <input
+															type="password" class="span12" placeholder="Password" />
+															<i class="icon-lock"></i>
+													</span>
+													</label> <label> <span
+														class="block input-icon input-icon-right"> <input
+															type="file" class="span12" placeholder="Select Photo" />
+															<i class="icon-picture"></i>
+													</span>
+													</label>
+
+													<label>
+															<input type="checkbox" />
+															<span class="lbl">
+																I accept the
+																<a href="#">User Agreement</a>
+															</span>
+														</label>
+
+													<div class="space-24"></div>
+
+													<div class="clearfix">
+														<button type="reset"
+															class="width-30 pull-left btn btn-small">
+															<i class="icon-refresh"></i> Reset
+														</button>
+
+														<button
+															class="width-65 pull-right btn btn-small btn-success">
+															SAVE <i class="icon-arrow-right icon-on-right"></i>
+														</button>
+													</div>
+												</fieldset>
+											</form> -->
+										</div>
+
+										<div class="toolbar center">
+											<a href="#" class="back-to-login-link"> <i
+												class="icon-arrow-left"></i> Back to HOME
+											</a>
+										</div>
+									</div>
+									<!--/widget-body-->
+								</div>
+								<!--/signup-box-->
+
+							</div>
+							<!--/widget-body-->
+						</div>
+						<!--/login-box-->
+
+
+
+
+
+					</div>
+					<!--/position-relative-->
+				</div>
+			</div>
+		</div>
+		<!--/.span-->
+	</div>
+	<!--/.row-fluid-->
+	<!-- </div>
+		</div> -->
+	<!--/.main-container-->
+
+	<!--basic scripts-->
+
+	<!--[if !IE]>-->
+
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+	<!--<![endif]-->
+
+	<!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+
+	<!--[if !IE]>-->
+
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		window.jQuery
+				|| document
+						.write("<script src='resources/js/jquery-2.0.3.min.js'>"
+								+ "<"+"/script>");
+		/*]]>*/
+	</script>
+
+	<!--<![endif]-->
+
+	<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='resources/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		if ("ontouchend" in document)
+			document
+					.write("<script src='resources/js/jquery.mobile.custom.min.js'>"
+							+ "<"+"/script>");
+		/*]]>*/
+	</script>
+	<script src="resources/js/bootstrap.min.js"></script>
+
+	<!--page specific plugin scripts-->
+
+	<!--ace scripts-->
+
+	<script src="resources/js/ace-elements.min.js"></script>
+	<script src="resources/js/ace.min.js"></script>
+
+	<!--inline scripts related to this page-->
+
+	<script type="text/javascript">
+		function show_box(id) {
+			$('.widget-box.visible').removeClass('visible');
+			$('#' + id).addClass('visible');
+		}
+	</script>
+	
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	
+	<script>
+		var app = angular.module("apsf", []);
+		</script>
+	<script
+		src="resources/js/service.js"></script>	
+	<script>
+		var app = angular.module("apsf");
+		app.controller("RegistrationCtrl", function($scope,UtilService) {
+			var reg = this;
+			UtilService.getObject('registration/static/data').then(function(response){
+				reg.staticData =response;
+				
+			});
+		});
+	</script>
+	
+</body>
+</html>
